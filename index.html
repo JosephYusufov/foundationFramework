@@ -16,24 +16,36 @@
 
         <div class="grid-y">
             <div class="typography">
-                <h3>Typography</h3>
+                <h3> <b>Typography</b> </h3>
                 <ul>
-                    <h1>Heading 1<small>Small Header</small></h1>
-                    <h2>Heading 2<small>Small Header</small></h2>
-                    <h3>Heading 3<small>Small Header</small></h3>
-                    <h4>Heading 4<small>Small Header</small></h4>
-                    <h5>Heading 5<small>Small Header</small></h5>
-                    <h6>Heading 6<small>Small Header</small></h6>
+                    <p>The Foundation Framework offers many different options for typography, with varying sizes, colors, and weights of fonts.</p>
+                    <h1>Heading 1 <small>Small Header</small></h1>
+                    <h2>Heading 2 <small>Small Header</small></h2>
+                    <h3>Heading 3 <small>Small Header</small></h3>
+                    <h4>Heading 4 <small>Small Header</small></h4>
+                    <h5>Heading 5 <small>Small Header</small></h5>
+                    <h6>Heading 6 <small>Small Header</small></h6>
                     <p>Measley little paragraph.</p>
                 </ul>
             </div>
             <div class="grid-layout">
-                <h3>Layout</h3>
+                <h3> <b>Layout</b> </h3>
+                <ul>
+                    <div class="grid-x grid-margin-x grid-padding-x">
+                        <p class="cell" style="background: lightblue;">first section</p>
+                        <p class="cell" style="background: red;">second section</p>
+                        <p class="cell" style="background: green;">third section</p>
+                    </div>
+                </ul>
             </div>    
             <div class="controls">
-                <h3>Controls</h3>
+                <h3> <b>Controls</b> </h3>
             </div>
         </div>
     </div>
+    <!-- jQuery must be imported before Foundation -->
+    <script src="/static/js/vendor/jquery.min.js"></script>
+    <!-- this will include every plugin and utility required by Foundation -->
+    <script src="/static/js/vendor/foundation.min.js"></script>
 </body>
 </html>
