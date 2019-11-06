@@ -10,7 +10,7 @@
     <!-- Compressed JavaScript -->
 </head>
 <body>
-    <div data-sticky-container>
+    <div id="top" data-sticky-container>
         <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
             <div class="title-bar-left">
                 <h3 class="text-center">Foundation Web Framework Tutorial</h3>
@@ -24,7 +24,7 @@
     <div class="grid-container">
         <div class="grid-y">
             <div class="typography">
-                <h3> <b>Typography</b> </h3>
+                <h3 style="display: inline-block;"> <b>Typography</b> </h3> <a href="#top" class="button" style="float: right;">Back to Top</a>
                 <ul>
                     <p>The Foundation Framework offers many different options for typography, with varying sizes, colors, and weights of fonts.</p>
                     <h1>Heading 1 <small>Small Header</small></h1>
@@ -35,24 +35,35 @@
                     <h6>Heading 6 <small>Small Header</small></h6>
                     <p>Measley little paragraph.</p>
                 </ul>
+            <hr>    
             </div>
             <div class="grid-layout">
-                <h3> <b>Layout</b> </h3>
-                <ul>
-                    <div class="grid-x grid-margin-x grid-padding-x">
-                        <p class="cell" style="background: lightblue;">first section</p>
-                        <p class="cell" style="background: red;">second section</p>
-                        <p class="cell" style="background: green;">third section</p>
+                <h3 style="display: inline-block;"> <b>Layout</b> </h3> <a href="#top" class="button" style="float: right;">Back to Top</a>
+                <p>Layout in Foundation 6 is done using the X-Y grid, which allows the user to set columns and rows wo responsive witdths, add gutters and padding, and allocate space on the screen as they see fit.</p>
+                <div class="grid-container">
+                    <h4 class="" >Grid with Padding</h4>
+                    <div class="grid-x grid-padding-x">
+                        <h4 class="cell medium-6" style="background: lightblue;">first section</h4>
+                        <h4 class="cell medium-2" style="background: red;">second section</h4>
+                        <h4 class="cell medium-2" style="background: green;">third section</h4>
                     </div>
-                </ul>
+                    <br>
+                    <h4 class="" >Grid with Margins</h4>
+                    <div class="grid-x grid-margin-x">
+                            <h4 class="cell medium-6" style="background: lightblue;">first section</h4>
+                            <h4 class="cell medium-2" style="background: red;">second section</h4>
+                            <h4 class="cell medium-2" style="background: green;">third section</h4>
+                    </div>    
+                </div>
+                <hr>
             </div>    
             <div class="controls">
-                <h3> <b>Controls</b> </h3>
+                <h3 style="display: inline-block;"> <b>Controls</b> </h3> <a href="#top" class="button" style="float: right;">Back to Top</a>
             </div>
         </div>
     </div>
     <!-- jQuery must be imported before Foundation -->
-    <script src="/static/js/vendor/jquery.min.js"></script>
+    <script src="/static/js/vendor/jquery.js"></script>
     <!-- this will include every plugin and utility required by Foundation -->
     <script src="/static/js/vendor/foundation.min.js"></script>
 </body>
