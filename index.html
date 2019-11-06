@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <div id="top" data-sticky-container>
+    <div id="top" class="sticky" data-sticky-container>
         <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
             <div class="title-bar-left">
                 <h3 class="text-center">Foundation Web Framework Tutorial</h3>
@@ -24,6 +24,13 @@
     <br>
     <div class="grid-container">
         <div class="grid-y">
+          <div class="intro">
+            <h3> Welcome to Foundation! --> <a href="https://foundation.zurb.com/sites/docs/">Official docs</a></h3>
+            <p> Foundation is a front end framework that allows web developers to create responsive, comprehensive websites.</p>
+            <p> We have used a <a href = "https://www.webopedia.com/TERM/C/CDN.html">CDN link</a> in our <code>code</code> to link an external stylesheet hosted by <a href="https://www.jsdelivr.com">jsdelivr</a>.</p>
+            <p> Come and bolster your web development <i>foundation</i>.</p>
+            <hr>
+          </div>
             <div class="typography">
                 <h3 style="display: inline-block;"> <b>Typography</b> </h3> <a href="#top" class="button" style="float: right;">Back to Top</a>
                 <ul>
@@ -40,26 +47,31 @@
             </div>
             <div class="grid-layout">
                 <h3 style="display: inline-block;"> <b>Layout</b> </h3> <a href="#top" class="button" style="float: right;">Back to Top</a>
-                <p>Layout in Foundation 6 is done using the X-Y grid, which allows the user to set columns and rows wo responsive witdths, add gutters and padding, and allocate space on the screen as they see fit.</p>
+                <p>Layout in Foundation 6 is done using containers, which are adaptive elements that change in size as the viewport changes.
+                  The main component of layout in Foundation 6 is the X-Y grid, which allows the user to set columns and rows with responsive widths, add gutters and padding, and allocate space on the screen as they see fit.</p>
+                <div class="grid-container" style="background-color: lightblue;">
+                  <h5 style="color:white;">A grid container</h5>
+                </div>
                 <div class="grid-container">
                     <h4 class="" >Grid with Padding</h4>
                     <div class="grid-x grid-padding-x">
-                        <h4 class="cell medium-6" style="background: lightblue;">first section</h4>
-                        <h4 class="cell medium-2" style="background: red;">second section</h4>
-                        <h4 class="cell medium-2" style="background: green;">third section</h4>
+                        <h4 class="cell medium-6" style="background: lightblue; color:white;">first section</h4>
+                        <h4 class="cell medium-2" style="background: red; color:white;">second section</h4>
+                        <h4 class="cell medium-2" style="background: green; color:white;">third section</h4>
                     </div>
                     <br>
                     <h4 class="" >Grid with Margins</h4>
                     <div class="grid-x grid-margin-x">
-                            <h4 class="cell medium-6" style="background: lightblue;">first section</h4>
-                            <h4 class="cell medium-2" style="background: red;">second section</h4>
-                            <h4 class="cell medium-2" style="background: green;">third section</h4>
+                            <h4 class="cell medium-6" style="background: lightblue; color:white;">first section</h4>
+                            <h4 class="cell medium-2" style="background: red; color:white;">second section</h4>
+                            <h4 class="cell medium-2" style="background: green; color:white;">third section</h4>
                     </div>
                 </div>
                 <hr>
             </div>
             <div class="controls">
                 <h3 style="display: inline-block;"> <b>Controls</b> </h3> <a href="#top" class="button" style="float: right;">Back to Top</a>
+
             </div>
         </div>
     </div>
